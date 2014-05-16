@@ -29,62 +29,84 @@
 %---------------------------------------------------------------------
 
 trioLeft(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, Linha, middle, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+trioLeft(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, Linha, middle, Tabuleiro).
 
 trioRight(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, Linha, middle, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+trioRight(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, Linha, middle, Tabuleiro).
 
 cobra(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, Linha, middle, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+cobra(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, Linha, middle, Tabuleiro).
 
 tSimples(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, center, Coluna, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+tSimples(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, Coluna, Tabuleiro).
 
 tLeft(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, Linha, middle, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+tLeft(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, Linha, middle, Tabuleiro).
 
 tRight(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, Linha, middle, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+tRight(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, Linha, middle, Tabuleiro).
 
 tInvertido(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, center, Coluna, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+tInvertido(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, Coluna, Tabuleiro).
 
 cantoTopLeft(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, center, Coluna, Tabuleiro);
-     coloca(Peca, Linha, middle, Tabuleiro);
-     coloca(Peca, center, midlle, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+cantoTopLeft(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, Coluna, Tabuleiro).
+cantoTopLeft(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, Linha, middle, Tabuleiro).
+cantoTopLeft(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, midlle, Tabuleiro).
 
 cantoTopRight(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, center, Coluna, Tabuleiro);
-     coloca(Peca, Linha, middle, Tabuleiro);
-     coloca(Peca, center, midlle, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+cantoTopRight(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, Coluna, Tabuleiro).
+cantoTopRight(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, Linha, middle, Tabuleiro).
+cantoTopRight(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, midlle, Tabuleiro).
 
 cantoBottomLeft(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, center, Coluna, Tabuleiro);
-     coloca(Peca, Linha, middle, Tabuleiro);
-     coloca(Peca, center, midlle, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+cantoBottomLeft(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, Coluna, Tabuleiro).
+cantoBottomLeft(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, Linha, middle, Tabuleiro).
+cantoBottomLeft(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, midlle, Tabuleiro).
 
 cantoBottomRight(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, center, Coluna, Tabuleiro);
-     coloca(Peca, Linha, middle, Tabuleiro);
-     coloca(Peca, center, midlle, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+cantoBottomRight(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, Coluna, Tabuleiro).
+cantoBottomRight(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, Linha, middle, Tabuleiro).
+cantoBottomRight(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, midlle, Tabuleiro).
 
 diagonalGrave(Peca, Linha, Coluna, Tabuleiro) :-
-    (coloca(Peca, Linha, Coluna, Tabuleiro);
-     coloca(Peca, center, Coluna, Tabuleiro);
-     coloca(Peca, Linha, middle, Tabuleiro);
-     coloca(Peca, center, midlle, Tabuleiro)).
+    coloca(Peca, Linha, Coluna, Tabuleiro).
+diagonalGrave(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, Coluna, Tabuleiro).
+diagonalGrave(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, Linha, middle, Tabuleiro).
+diagonalGrave(Peca, Linha, Coluna, Tabuleiro) :-
+    coloca(Peca, center, midlle, Tabuleiro).
 
 %diagonalAguda(Peca, Linha, Coluna, Tabuleiro) :-
 %    coloca(Peca, Linha, Coluna, Tabuleiro).
