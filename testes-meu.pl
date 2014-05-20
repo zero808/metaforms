@@ -50,7 +50,7 @@ desafio(1, Tabuleiro) :-
 %	diagonalGrave(peca(quadrado, azul), bottom, right, Tabuleiro),
 %	diagonalAguda(peca(quadrado, amarelo), bottom, left, Tabuleiro).
 %	diagonalAguda(peca(quadrado, amarelo), bottom, left, Tabuleiro),
-	check(Tabuleiro, TabuleiroFinal).
+%	check(Tabuleiro, TabuleiroFinal).
 
 %--------------------------------------
 % d) Exemplos de testes simples para testar as pistas implementadas
